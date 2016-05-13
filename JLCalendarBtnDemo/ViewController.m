@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JLCalendarBtn.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    JLCalendarBtn *btn = [[JLCalendarBtn alloc]initWithFrame:CGRectMake(100, 50, 100, 100)];
+    btn.backgroundColor = [UIColor redColor];
+    btn.currentYear  =2022;
+    btn.currentMonth = 12;
+    [self.view addSubview:btn];
+    
+    JLCalendarBtn *btn1 = [[JLCalendarBtn alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
+    btn1.backgroundColor = [UIColor redColor];
+    btn1.currentYear  =2033;
+    [self.view addSubview:btn1];
+    
+    JLCalendarBtn *btn2 = [[JLCalendarBtn alloc]initWithFrame:CGRectMake(100, 350, 100, 100)];
+    btn2.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn2];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
