@@ -37,11 +37,11 @@
 }
 - (void)seletedOneDay:(NSInteger)day withMonth:(NSInteger)month withYear:(NSInteger)year
 {
-    _currentYear = year;
-    _currentMonth = month;
-    _currentDay = day;
+    self.currentYear = year;
+    self.currentMonth = month;
+    self.currentDay = day;
     
-    [self getDate];
+    
 }
 
 -(void)setCurrentYear:(NSInteger)currentYear
