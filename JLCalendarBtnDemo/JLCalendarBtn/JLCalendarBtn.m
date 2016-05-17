@@ -31,6 +31,7 @@
             [vc presentViewController:calendar animated:YES completion:^{
                 
             }];
+            break;
         }
     }
 
